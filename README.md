@@ -16,7 +16,7 @@ Once you made the Pull from Repository, using the PC Console, go to that folder 
 
 Node use 3 services:
 
-http://localhost:3000/createCollection to copy the data from HN and insert in the MongoDB Remote Server that I have create to testing and don't make you create a Local Server. Note: I did it, it's not necessary deploy the API again, if you do it, the data will copy to collection may duplicated, because I am assuming that HN Api return only new posts.
+http://localhost:3000/createCollection to copy the data from HN and insert in the MongoDB Remote Server that I have created for testing and don't make you create a Local Server. Note: I did it, it's not necessary deploy the API again, if you do it, the data will copy to collection may duplicated, because I am assuming that HN Api return only new posts.
 
 http://localhost:3000/getNews to retrieve the data from MongoDB using Moongoose.
 
