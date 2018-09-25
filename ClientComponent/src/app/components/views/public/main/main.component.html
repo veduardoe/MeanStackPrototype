@@ -1,0 +1,29 @@
+<ng-container>
+	<div class="container">
+		<mat-progress-bar *ngIf="bar" class="example-margin" [color]="'primary'" [mode]="'indeterminate'" [value]="'50'" [bufferValue]="'75'"></mat-progress-bar>
+
+		<div class="lists">
+			<div class="oneList" *ngFor="let post of posts">
+				<button mat-icon-button class="deletebtn" (click)="delete(post._id)">
+				  <mat-icon>clear</mat-icon>
+				</button>
+				<button mat-button class="rowbtn" (click)="goto(post.story_url)">
+					<div fxLayout="row" fxLayout.xs="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center" *ngIf="post.story_title || post.title">
+			        <div fxFlex="70%">
+			          <span>
+			          		<i *ngIf="post.story_title">{{post.story_title}}</i>
+			          		<i *ngIf="!post.story_title">{{post.title}}</i>
+			          		 - <b>{{post.author}}</b></span>
+			        </div>
+			         <div fxFlex="20%">
+			          <span>{{post.created_at}}</span>
+			        </div>
+			        <div fxFlex="10%">
+
+			        </div>
+			    </div>
+				</button>
+			</div>
+		</div>
+	</div>
+</ng-container>

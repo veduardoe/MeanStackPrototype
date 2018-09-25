@@ -5,7 +5,14 @@ var router = express.Router();
 var config = require('./config/config.js');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://veduardoe:321321dwa@ds111913.mlab.com:11913/news')
+mongoose.connect('mongodb://veduardoe:321321dwa@ds111913.mlab.com:11913/news');
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
+  next();
+});
 
 app.get('/createCollection', function (req, res) {
 
@@ -58,5 +65,5 @@ app.delete('/deleteNew/:id', function (req, res) {
 
 
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
+  console.log('Listening on port 3000!');
 });

@@ -1,0 +1,9 @@
+
+.container{ max-width: 1170px; margin: 20px auto; display:block;}
+.lists .oneList{position: relative}
+.lists button.rowbtn{ text-align:left; display: block; padding: 20px; border-bottom: 1px solid #ccc !important; text-decoration: none !important; color:#333; font-size: 13px; width: 100%}
+.lists .oneList:hover{background: #fafafa !important; color:#333 !important;}
+.lists .oneList:last-child{border:none;}
+.lists .oneList button.rowbtn b{color:#999 !important; font-weight: normal;}
+.lists button.deletebtn{position: absolute; right:20px; top:17px; z-index: 20; visibility: hidden;}
+.lists .oneList:hover > button.deletebtn{visibility: visible;}
