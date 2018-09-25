@@ -4,7 +4,7 @@ Technical Test Angular6 + Nodejs + Mongoose
 # How to make this project works
 In this repository there are 2 folders named "Client Component" and "Server Component", one include de "Frontend App" implemented with Angular 6 + Angular Material Design and the another one include "The Services in Nodejs" using Express and Moongose.
 
-# Installations necesary to run the Aplication or Deploy for Testing
+# Installations necessary to run the Aplication or Deploy for Testing
 1. Install Nodejs + NPM from https://nodejs.org/
 2. Install Angular Cli from https://cli.angular.io/. Follow the instruction using NPM. Note: Be sure that you are downloading the latest versión for Angular 6.
 
