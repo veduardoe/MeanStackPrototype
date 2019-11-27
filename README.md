@@ -1,4 +1,4 @@
-# ReignDesignAngular
+# AngularNodejsMongoose Prototype
 Technical Test Angular6 + Nodejs + Mongoose
 
 # How to make this project works
